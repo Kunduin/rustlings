@@ -21,6 +21,7 @@ pub struct NotDivisibleError {
     divisor: i32,
 }
 
+
 // This function should calculate `a` divided by `b` if `a` is
 // evenly divisible by b.
 // Otherwise, it should return a suitable error.
@@ -67,12 +68,22 @@ mod tests {
         assert_eq!(format!("{:?}", x), "Ok([1, 11, 1426, 3])");
     }
 
+
     #[test]
+
     fn list_of_results() {
+
         let numbers = vec![27, 297, 38502, 81];
+
         let division_results = numbers.into_iter().map(|n| divide(n, 27));
+
         let x //... Fill in here!
+
         assert_eq!(format!("{:?}", x), "[Ok(1), Ok(11), Ok(1426), Ok(3)]");
+
     }
+
     */
+
 }
+
